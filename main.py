@@ -204,7 +204,7 @@ async def get_user_for_genre(genero: str):
     }
 
     return result
-'''
+
 
 
 # Si es un sistema de recomendación item-item: def recomendacion_juego( id de producto ): 
@@ -288,3 +288,4 @@ def recomendacion_usuario_juego(dataframe, user_id, num_recomendaciones=5):
 async def obtener_recomendaciones_usuario_juego(user_id: str):
     recomendaciones = recomendacion_usuario_juego(mergedMachine, user_id)
     return {"user_id": user_id, "recommended_games": recomendaciones}
+'''
