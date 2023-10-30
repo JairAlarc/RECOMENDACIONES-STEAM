@@ -135,7 +135,7 @@ starlette==0.27.0
 statsmodels
 tangled-up-in-unicode==0.2.0
 tenacity==8.2.2
-tensorboard==2.13.0
+tensorboard
 tensorboard-data-server==0.7.1
 tensorflow==2.13.0
 tensorflow-estimator==2.13.0
