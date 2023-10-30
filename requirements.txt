@@ -49,7 +49,7 @@ huggingface-hub
 idna==3.4
 ImageHash==4.3.1
 ipykernel
-ipython==8.10.0
+ipython
 ipywidgets==8.1.1
 jedi==0.18.2
 Jinja2==3.1.2
