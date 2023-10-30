@@ -89,7 +89,7 @@ parso==0.8.3
 patsy==0.5.3
 phik==0.12.3
 pickleshare==0.7.5
-Pillow==10.0.0
+Pillow
 platformdirs==3.0.0
 plotly==5.15.0
 prompt-toolkit==3.0.36
