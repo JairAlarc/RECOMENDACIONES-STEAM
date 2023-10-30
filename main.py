@@ -176,7 +176,7 @@ def get_developer_sentiment(developer: str):
     return {"sentiment_data": result}
 
 
-'''
+
 #def UserForGenre( genero : str ): Debe devolver el usuario que acumula más horas jugadas para el género
 #  dado y una lista de la acumulación de horas jugadas por año de lanzamiento.
 dfFilGamesufg = pd.read_csv('dfuserforGenG.csv')
@@ -208,7 +208,7 @@ async def get_user_for_genre(genero: str):
     return result
 
 
-
+'''
 # Si es un sistema de recomendación item-item: def recomendacion_juego( id de producto ): 
 # Ingresando el id de producto, deberíamos recibir una lista con 5 juegos recomendados similares al ingresado.
 mergedMachine = pd.read_csv('mergedMachine.csv')  
