@@ -214,7 +214,7 @@ async def get_user_for_genre(genero: str):
 # Ingresando el id de producto, deberíamos recibir una lista con 5 juegos recomendados similares al ingresado.
 mergedMachine = pd.read_csv('mergedMachineM.csv')  
 # Calcula la similitud del coseno una vez para todos los datos
-features = mergedMachine.iloc[:, 5:]  # Selecciona las columnas relevantes
+features = mergedMachine.iloc[:, 5:8]  # Selecciona las columnas relevantes
 cosine_sim = cosine_similarity(features, features)
 
 # Función para recomendaciones
