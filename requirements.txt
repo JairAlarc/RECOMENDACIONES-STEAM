@@ -76,7 +76,7 @@ nbformat
 nest-asyncio==1.5.6
 networkx
 nltk==3.8.1
-numpy==1.23.5
+numpy
 oauthlib==3.2.2
 openpyxl==3.1.2
 opt-einsum==3.3.0
