@@ -106,7 +106,7 @@ pymongo==4.3.3
 PyMySQL==1.0.3
 pyodbc==4.0.39
 pyparsing==3.0.9
-pyproj==3.4.1
+pyproj
 pyrsistent==0.19.3
 pyshp==2.3.1
 PySocks==1.7.1
