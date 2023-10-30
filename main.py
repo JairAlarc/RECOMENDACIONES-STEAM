@@ -207,12 +207,12 @@ async def get_user_for_genre(genero: str):
     }
 
     return result
-
+'''
 
 
 # Si es un sistema de recomendación item-item: def recomendacion_juego( id de producto ): 
 # Ingresando el id de producto, deberíamos recibir una lista con 5 juegos recomendados similares al ingresado.
-mergedMachine = pd.read_csv('mergedMachine.csv')  
+mergedMachine = pd.read_csv('mergedMachineM.csv')  
 # Calcula la similitud del coseno una vez para todos los datos
 features = mergedMachine.iloc[:, 5:]  # Selecciona las columnas relevantes
 cosine_sim = cosine_similarity(features, features)
@@ -253,7 +253,7 @@ async def obtener_recomendaciones(item_id: int):
     return {"Juegos recomendados": recomendaciones}
 
 
-'''
+
 mergedMachine = pd.read_csv('mergedMachineM.csv')
 #Si es un sistema de recomendación user-item: def recomendacion_usuario( id de usuario ): 
 # Ingresando el id de un usuario, deberíamos recibir una lista con 5 juegos recomendados para dicho usuario.
