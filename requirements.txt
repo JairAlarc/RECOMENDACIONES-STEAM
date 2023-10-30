@@ -96,7 +96,7 @@ prompt-toolkit==3.0.36
 protobuf==3.20.3
 psutil==5.9.4
 pure-eval==0.2.2
-pyarrow==13.0.0
+pyarrow
 pyasn1==0.5.0
 pyasn1-modules==0.3.0
 pycparser==2.21
