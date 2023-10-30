@@ -13,7 +13,7 @@ from langdetect import detect
 from sklearn.metrics.pairwise import cosine_similarity
 from fastapi.params import Path
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
-
+import nltk
 app = FastAPI()
 '''
 # Función def developer( desarrollador : str ): Cantidad de items y porcentaje de contenido Free por año según empresa desarrolladora.
