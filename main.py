@@ -178,7 +178,7 @@ def get_developer_sentiment(developer: str):
 #def UserForGenre( genero : str ): Debe devolver el usuario que acumula más horas jugadas para el género
 #  dado y una lista de la acumulación de horas jugadas por año de lanzamiento.
 dfFilGamesufg = pd.read_csv('dfuserforGenG.csv')
-dfFilItemsufg = pd.read_parquet('dfuserforGenIPark.csv', engine='pyarrow')
+dfFilItemsufg = pd.read_parquet('dfuserforGenIReduci.csv')
 @app.get("/user_for_genre/{genero}")
 async def get_user_for_genre(genero: str):
     # Realiza la búsqueda del género en el DataFrame
