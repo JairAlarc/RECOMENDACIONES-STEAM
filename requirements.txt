@@ -67,7 +67,7 @@ libclang==16.0.0
 lxml==4.9.2
 Markdown==3.4.3
 MarkupSafe==2.1.2
-matplotlib==3.7.2
+matplotlib
 matplotlib-inline==0.1.6
 missingno==0.5.2
 multimethod==1.10
