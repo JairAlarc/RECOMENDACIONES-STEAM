@@ -260,7 +260,7 @@ mergedMachine = pd.read_csv('mergedMachine.csv')
 def recomendacion_usuario_juego(dataframe, user_id, num_recomendaciones=5):
     # Tu código para calcular recomendaciones
     user_id = user_id.lower()
-    features = dataframe.iloc[:, 5:18]  # Asumiendo que las columnas de características comienzan en la columna 4
+    features = dataframe.iloc[:, 5:8]  # Asumiendo que las columnas de características comienzan en la columna 4
     cosine_sim = cosine_similarity(features, features)
     
     # Obtiene el índice del usuario ingresado
