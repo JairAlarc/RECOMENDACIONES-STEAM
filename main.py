@@ -17,7 +17,7 @@ import nltk
 nltk.download('vader_lexicon')
 
 app = FastAPI()
-
+'''
 # Función def developer( desarrollador : str ): Cantidad de items y porcentaje de contenido Free por año según empresa desarrolladora.
 dfGames_copia = pd.read_csv('dfdeveloper.csv')
 def developer(desarrollador: str = Path(..., title="Nombre del desarrollador")):
@@ -290,4 +290,4 @@ def recomendacion_usuario_juego(dataframe, user_id, num_recomendaciones=5):
 async def obtener_recomendaciones_usuario_juego(user_id: str):
     recomendaciones = recomendacion_usuario_juego(mergedMachine, user_id)
     return {"user_id": user_id, "recommended_games": recomendaciones}
-'''
+
