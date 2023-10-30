@@ -132,7 +132,7 @@ sortedcontainers==2.4.0
 soupsieve==2.4.1
 stack-data==0.6.2
 starlette==0.27.0
-statsmodels==0.14.0
+statsmodels
 tangled-up-in-unicode==0.2.0
 tenacity==8.2.2
 tensorboard==2.13.0
