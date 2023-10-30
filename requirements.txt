@@ -83,7 +83,7 @@ opt-einsum==3.3.0
 outcome==1.2.0
 overpy==0.6
 packaging==23.1
-pandas==2.0.3
+pandas
 pandas-profiling==3.2.0
 parso==0.8.3
 patsy==0.5.3
