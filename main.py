@@ -254,7 +254,7 @@ async def obtener_recomendaciones(item_id: int):
 
 
 '''
-
+mergedMachine = pd.read_csv('mergedMachine.csv')
 #Si es un sistema de recomendación user-item: def recomendacion_usuario( id de usuario ): 
 # Ingresando el id de un usuario, deberíamos recibir una lista con 5 juegos recomendados para dicho usuario.
 def recomendacion_usuario_juego(dataframe, user_id, num_recomendaciones=5):
