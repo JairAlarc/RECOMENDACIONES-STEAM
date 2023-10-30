@@ -70,7 +70,7 @@ MarkupSafe==2.1.2
 matplotlib
 matplotlib-inline==0.1.6
 missingno==0.5.2
-multimethod==1.10
+multimethod
 mysql-connector-python==8.0.33
 nbformat==5.9.0
 nest-asyncio==1.5.6
