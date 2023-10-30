@@ -59,7 +59,7 @@ jsonschema==4.17.3
 jupyter_client
 jupyter_core
 jupyterlab-widgets==3.0.9
-keras==2.13.1
+keras
 kiwisolver==1.4.4
 kneed==0.8.3
 langdetect==1.0.9
