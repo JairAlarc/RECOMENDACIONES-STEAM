@@ -10,7 +10,7 @@ jupyter_client
 jupyter_core
 keras
 langdetect==1.0.9
-nltk==3.8.1
+nltk
 numpy
 pandas
 pyproj
