@@ -132,7 +132,7 @@ def best_developer_year(anio):
 def get_best_developer_year(anio: int):
     result = best_developer_year(anio)
     return {"best_developers": result}
-
+'''
 
 
 
@@ -290,4 +290,4 @@ def recomendacion_usuario_juego(dataframe, user_id, num_recomendaciones=5):
 async def obtener_recomendaciones_usuario_juego(user_id: str):
     recomendaciones = recomendacion_usuario_juego(mergedMachine, user_id)
     return {"user_id": user_id, "recommended_games": recomendaciones}
-
+'''
