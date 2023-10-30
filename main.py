@@ -1,4 +1,3 @@
-
 # Librerias 
 
 from fastapi import FastAPI
@@ -58,7 +57,6 @@ def recommend_developer(desarrollador: str):
 
 
 
-
 # def userdata( User_id : str ): Debe devolver cantidad de dinero gastado por el usuario, 
 # el porcentaje de recomendación en base a reviews.recommend y cantidad de items.
 dfFilReviews = pd.read_csv('dfuserdataR.csv')
@@ -98,6 +96,37 @@ def get_user_data(User_id: str):
 
 
 
+#def UserForGenre( genero : str ): Debe devolver el usuario que acumula más horas jugadas para el género
+#  dado y una lista de la acumulación de horas jugadas por año de lanzamiento.
+dfFilGamesufg = pd.read_csv('dfuserforGenG.csv')
+dfFilItemsufg = pd.read_csv('dfuserforGenIReduci.csv')
+@app.get("/user_for_genre/{genero}")
+async def get_user_for_genre(genero: str):
+    # Realiza la búsqueda del género en el DataFrame
+    merged_df = pd.merge(dfFilGamesufg, dfFilItemsufg, on='item_id', how='inner')
+    
+    condition = merged_df['genres'].str.contains(genero, case=False, na=False)
+    juegos_por_genero = merged_df[condition]
+
+    # A partir de aquí, obtendremos la lista de item_id para los juegos en ese género.
+    item_ids = juegos_por_genero['item_id'].tolist()
+
+    grouped = merged_df.groupby(['anios', 'user_id'])['playtimeTotal'].sum().reset_index()
+
+    # Encuentra el 'user_id' que tiene la mayor suma de 'playtimeTotal' por año.
+    max_playtime_users_by_year = grouped.groupby(['anios', 'user_id'])['playtimeTotal'].max().reset_index()
+
+    max_hours_played = max_playtime_users_by_year.groupby('anios').apply(lambda x: x.loc[x['playtimeTotal'].idxmax()])
+
+    result = {
+        "Genero": genero,
+        "Numero de Juegos": len(item_ids),
+        "Usuario con más horas jugadas para Género": max_hours_played.to_dict(orient='records')
+    }
+
+    return result
+
+
 
 # def best_developer_year( año : int ): Devuelve el top 3 de desarrolladores con juegos MÁS recomendados por usuarios para el año dado. 
 # (reviews.recommend = True y comentarios positivos)
@@ -133,7 +162,6 @@ def best_developer_year(anio):
 def get_best_developer_year(anio: int):
     result = best_developer_year(anio)
     return {"best_developers": result}
-
 
 
 
@@ -175,38 +203,6 @@ def developer_sentiment(developer: str):
 def get_developer_sentiment(developer: str):
     result = developer_sentiment(developer)
     return {"sentiment_data": result}
-
-
-
-#def UserForGenre( genero : str ): Debe devolver el usuario que acumula más horas jugadas para el género
-#  dado y una lista de la acumulación de horas jugadas por año de lanzamiento.
-dfFilGamesufg = pd.read_csv('dfuserforGenG.csv')
-dfFilItemsufg = pd.read_csv('dfuserforGenIReduci.csv')
-@app.get("/user_for_genre/{genero}")
-async def get_user_for_genre(genero: str):
-    # Realiza la búsqueda del género en el DataFrame
-    merged_df = pd.merge(dfFilGamesufg, dfFilItemsufg, on='item_id', how='inner')
-    
-    condition = merged_df['genres'].str.contains(genero, case=False, na=False)
-    juegos_por_genero = merged_df[condition]
-
-    # A partir de aquí, obtendremos la lista de item_id para los juegos en ese género.
-    item_ids = juegos_por_genero['item_id'].tolist()
-
-    grouped = merged_df.groupby(['anios', 'user_id'])['playtimeTotal'].sum().reset_index()
-
-    # Encuentra el 'user_id' que tiene la mayor suma de 'playtimeTotal' por año.
-    max_playtime_users_by_year = grouped.groupby(['anios', 'user_id'])['playtimeTotal'].max().reset_index()
-
-    max_hours_played = max_playtime_users_by_year.groupby('anios').apply(lambda x: x.loc[x['playtimeTotal'].idxmax()])
-
-    result = {
-        "Genero": genero,
-        "Numero de Juegos": len(item_ids),
-        "Usuario con más horas jugadas para Género": max_hours_played.to_dict(orient='records')
-    }
-
-    return result
 
 
 
