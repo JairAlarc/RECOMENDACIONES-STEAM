@@ -45,7 +45,7 @@ h11==0.14.0
 h5py
 htmlmin==0.1.12
 httptools==0.5.0
-huggingface-hub==0.17.3
+huggingface-hub
 idna==3.4
 ImageHash==4.3.1
 ipykernel==6.21.2
