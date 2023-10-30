@@ -74,7 +74,7 @@ multimethod
 mysql-connector-python==8.0.33
 nbformat
 nest-asyncio==1.5.6
-networkx==3.1
+networkx
 nltk==3.8.1
 numpy==1.23.5
 oauthlib==3.2.2
