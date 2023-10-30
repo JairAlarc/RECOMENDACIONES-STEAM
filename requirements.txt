@@ -96,7 +96,6 @@ prompt-toolkit==3.0.36
 protobuf==3.20.3
 psutil==5.9.4
 pure-eval==0.2.2
-pyarrow
 pyasn1==0.5.0
 pyasn1-modules==0.3.0
 pycparser==2.21
@@ -138,10 +137,6 @@ tangled-up-in-unicode==0.2.0
 tenacity==8.2.2
 tensorboard
 tensorboard-data-server==0.7.1
-tensorflow
-tensorflow-estimator==2.13.0
-tensorflow-intel
-tensorflow-io-gcs-filesystem==0.31.0
 termcolor==2.3.0
 textblob==0.17.1
 threadpoolctl==3.1.0
