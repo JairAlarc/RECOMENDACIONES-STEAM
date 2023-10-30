@@ -18,6 +18,7 @@ nltk.download('vader_lexicon')
 
 app = FastAPI()
 
+'''
 # Función def developer( desarrollador : str ): Cantidad de items y porcentaje de contenido Free por año según empresa desarrolladora.
 dfGames_copia = pd.read_csv('dfdeveloper.csv')
 def developer(desarrollador: str = Path(..., title="Nombre del desarrollador")):
@@ -208,7 +209,7 @@ async def get_user_for_genre(genero: str):
     return result
 
 
-'''
+
 # Si es un sistema de recomendación item-item: def recomendacion_juego( id de producto ): 
 # Ingresando el id de producto, deberíamos recibir una lista con 5 juegos recomendados similares al ingresado.
 mergedMachine = pd.read_csv('mergedMachine.csv')  
@@ -252,7 +253,7 @@ async def obtener_recomendaciones(item_id: int):
     return {"Juegos recomendados": recomendaciones}
 
 
-
+'''
 
 #Si es un sistema de recomendación user-item: def recomendacion_usuario( id de usuario ): 
 # Ingresando el id de un usuario, deberíamos recibir una lista con 5 juegos recomendados para dicho usuario.
@@ -290,4 +291,4 @@ def recomendacion_usuario_juego(dataframe, user_id, num_recomendaciones=5):
 async def obtener_recomendaciones_usuario_juego(user_id: str):
     recomendaciones = recomendacion_usuario_juego(mergedMachine, user_id)
     return {"user_id": user_id, "recommended_games": recomendaciones}
-'''
+
