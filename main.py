@@ -15,7 +15,7 @@ from fastapi.params import Path
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 app = FastAPI()
-
+'''
 # Función def developer( desarrollador : str ): Cantidad de items y porcentaje de contenido Free por año según empresa desarrolladora.
 dfGames_copia = pd.read_csv('dfdeveloper.csv')
 def developer(desarrollador: str = Path(..., title="Nombre del desarrollador")):
@@ -130,7 +130,7 @@ def best_developer_year(anio):
 def get_best_developer_year(anio: int):
     result = best_developer_year(anio)
     return {"best_developers": result}
-
+'''
 
 
 
