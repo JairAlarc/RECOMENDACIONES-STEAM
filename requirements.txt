@@ -148,7 +148,7 @@ tokenizers==0.14.1
 tornado==6.2
 tqdm==4.66.1
 traitlets==5.9.0
-transformers==4.34.1
+transformers
 trio==0.22.2
 trio-websocket==0.11.1
 tweepy==4.13.0
