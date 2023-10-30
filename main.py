@@ -210,7 +210,7 @@ def get_developer_sentiment(developer: str):
 # Ingresando el id de producto, deberíamos recibir una lista con 5 juegos recomendados similares al ingresado.
 mergedMachine = pd.read_csv('mergedMachineM.csv')  
 # Calcula la similitud del coseno una vez para todos los datos
-features = mergedMachine.iloc[:, 5:8]  # Selecciona las columnas relevantes
+features = mergedMachine.iloc[:, 5:]  # Selecciona las columnas relevantes
 cosine_sim = cosine_similarity(features, features)
 
 # Función para recomendaciones
@@ -256,7 +256,7 @@ mergedMachine = pd.read_csv('mergedMachineM.csv')
 def recomendacion_usuario_juego(dataframe, user_id, num_recomendaciones=5):
     # Tu código para calcular recomendaciones
     user_id = user_id.lower()
-    features = dataframe.iloc[:, 5:8]  # Asumiendo que las columnas de características comienzan en la columna 4
+    features = dataframe.iloc[:, 5:]  # Asumiendo que las columnas de características comienzan en la columna 4
     cosine_sim = cosine_similarity(features, features)
     
     # Obtiene el índice del usuario ingresado
