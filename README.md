@@ -16,7 +16,7 @@ Este proyecto en Steam me enseñó la importancia de la perseverancia y la pasi�
 
 En nuestra propuesta de trabajo, tuvimos varios puntos claves:
 
-1. **Transformaciones en los Datos**: En el MVP, decidimos centrarnos en la lectura del [conjunto de datos](nombre-del-archivo.extension) con el formato correcto. Esto implica la eliminación de columnas innecesarias que no se utilizan para responder consultas o preparar modelos de aprendizaje automático. Al hacerlo, logramos optimizar el rendimiento de la API y el entrenamiento del modelo.
+1. **Transformaciones en los Datos**: En el MVP, decidimos centrarnos en la lectura del [conjunto de datos](https://github.com/JairAlarc/ProyectoCohorte16/blob/main/dfFuncionesC16.ipynb) con el formato correcto. Esto implica la eliminación de columnas innecesarias que no se utilizan para responder consultas o preparar modelos de aprendizaje automático. Al hacerlo, logramos optimizar el rendimiento de la API y el entrenamiento del modelo.
 
 2. **Feature Engineering**: Uno de los aspectos importantes fue la creación de una nueva columna llamada 'sentiment_analysis' en el dataset 'user_reviews'. Aplicamos un análisis de sentimiento con Procesamiento del Lenguaje Natural (NLP), Textblob, Vader para clasificar las reseñas de juegos de los usuarios en tres categorías: '0' si es mala y '1' si es positiva. Esta columna reemplazó la columna 'user_reviews.review', lo que facilita el trabajo de análisis de datos. 
 
