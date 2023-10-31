@@ -43,6 +43,10 @@ Para el Sistema de Recomendación Usuario-Ítem: Desarrollamos un modelo que se 
 
 Ambos sistemas de recomendación se integran en nuestra API, lo que permite a los usuarios acceder a estas recomendaciones a través de solicitudes GET. Esta implementación brinda a los departamentos de Analytics y Machine Learning la capacidad de utilizar los sistemas de recomendación para mejorar la experiencia de los usuarios y aumentar la participación en la plataforma. ¡Un paso emocionante hacia una plataforma de Steam más personalizada y atractiva para los usuarios! 😁🎮
 
-Y por cierto se realizo un [Deployment](https://otro-657u.onrender.com/docs#/) exitoso!
+Y por cierto se realizo un [Deployment](https://entregable-tsdu.onrender.com) exitoso!
+
 [Video](https://vimeo.com/879873188?share=copy)
+
+[Link Archivos completos](https://drive.google.com/drive/folders/1h_Wnoj1z7LJsWMDnDAFKgZ-V4PNWiVw3?usp=drive_link)
+
 
