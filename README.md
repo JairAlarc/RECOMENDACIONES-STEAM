@@ -20,7 +20,8 @@ En nuestra propuesta de trabajo, tuvimos varios puntos claves:
 
 2. **Feature Engineering**: Uno de los aspectos importantes fue la creación de una nueva columna llamada 'sentiment_analysis' en el dataset 'user_reviews'. Aplicamos un análisis de sentimiento con Procesamiento del Lenguaje Natural (NLP), Textblob, Vader para clasificar las reseñas de juegos de los usuarios en tres categorías: '0' si es mala y '1' si es positiva. Esta columna reemplazó la columna 'user_reviews.review', lo que facilita el trabajo de análisis de datos. 
 
-3. **Desarrollo de la API**: En esta fase, propusimos exponer los datos de la empresa mediante el uso del framework FastAPI. Creamos varios endpoints para la API, cada uno con su decorador correspondiente. Estas son las funciones que creamos para los endpoints:
+3. **Desarrollo de la API**: En esta fase, propusimos exponer los datos de la empresa mediante el uso del framework FastAPI. Creamos varios endpoints para la API, cada uno con su decorador correspondiente. Estas son las [funciones](nombre-del-archivo.extension)
+ que creamos para los endpoints:
 
     - `developer(desarrollador: str)`: Proporciona la cantidad de elementos y el porcentaje de contenido gratuito por año según la empresa desarrolladora.
 
