@@ -42,3 +42,5 @@ Para el Sistema de Recomendación Ítem-Ítem: Diseñamos un modelo basado en la
 Para el Sistema de Recomendación Usuario-Ítem: Desarrollamos un modelo que se basa en encontrar usuarios similares. Cuando un usuario ingresa su ID, el modelo busca en la base de datos de usuarios similares y recomienda una lista de 5 juegos que a esos usuarios similares les gustaron. Este sistema de recomendación permite a los usuarios recibir sugerencias personalizadas basadas en sus preferencias y en las de usuarios similares.
 
 Ambos sistemas de recomendación se integran en nuestra API, lo que permite a los usuarios acceder a estas recomendaciones a través de solicitudes GET. Esta implementación brinda a los departamentos de Analytics y Machine Learning la capacidad de utilizar los sistemas de recomendación para mejorar la experiencia de los usuarios y aumentar la participación en la plataforma. ¡Un paso emocionante hacia una plataforma de Steam más personalizada y atractiva para los usuarios! 😁🎮
+
+Y por cierto se realizo un [Deployment]([nombre-del-archivo.extension](https://otro-657u.onrender.com/docs#/)https://otro-657u.onrender.com/docs#/) exitoso!
